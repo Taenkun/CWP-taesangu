@@ -78,7 +78,7 @@ def diagonal_check(clean_lines, king_r, king_c, size):
             piece = clean_lines[current_r][current_c]  
             if piece == 'B' or piece == 'Q':             # Bishop หรือ Queen = โดนรุก
                 return True
-            # Pawn โจมตีทแยงขึ้นด้านบน+จะต้องอยู่ด้านล่างในมุมK step_r == 1 distance == 1 แถวเพิ่ม+อยู่ติดกัน
+            # Pawn รุกทแยงขึ้นด้านบน+จะต้องอยู่ด้านล่างในมุมK step_r == 1 distance == 1 แถวเพิ่ม+อยู่ติดกัน
             elif piece == 'P' and distance == 1 and step_r == 1:
                 return True
             elif piece == 'P' or piece == 'R' or piece == 'K': # เจอตัวอื่น
